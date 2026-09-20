@@ -3,157 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Telegram Trading Channel</title>
+<title>WAY2 LABH - Telegram</title>
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background: #681d05;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    padding: 18px;
+  margin: 0;
+  padding: 15px;
+  background: #4a0d04;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 .container {
-    max-width: 680px;
-    margin: auto;
-    min-height: 95vh;
-    border: 4px solid #fff;
-    border-radius: 30px;
-    background: #390800;
-    padding: 22px;
-    text-align: center;
+  max-width: 680px;
+  min-height: 95vh;
+  margin: auto;
+  padding: 25px 18px;
+  border: 4px solid white;
+  border-radius: 30px;
+  background: #300700;
 }
 
 .profile {
-    width: 240px;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 6px solid white;
-    margin: 0 auto 38px;
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin: 10px auto 25px;
 }
 
 h1 {
-    font-size: clamp(28px, 7vw, 52px);
-    margin-bottom: 24px;
+  font-size: 45px;
+  margin: 15px 0;
 }
 
-.markets {
-    font-size: 20px;
-    margin-bottom: 22px;
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .description {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 34px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .join-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    width: 100%;
-    max-width: 490px;
-    min-height: 76px;
-    margin: 0 auto 35px;
-    padding: 15px;
-    background: #efff00;
-    color: #050505;
-    font-size: clamp(20px, 5vw, 32px);
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 18px;
-    box-shadow: 0 0 25px #efff0070;
-    transition: 0.2s;
-}
-
-.join-btn:hover {
-    transform: scale(1.03);
-    background: #fff;
-}
-
-.telegram-icon {
-    width: 34px;
-    height: 34px;
-    background: #080808;
-    color: #efff00;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 19px;
-    flex-shrink: 0;
-}
-
-.features {
-    margin: 30px 0 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: block;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px 12px;
+  background: #efff00;
+  color: black;
+  font-size: 27px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 18px;
+  box-shadow: 0 0 20px #dfff00;
 }
 
 .feature {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    text-align: left;
-    padding: 22px 18px;
-    border: 1px solid #49251d;
-    background: #210b09;
-    border-radius: 18px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+  padding: 18px;
+  margin: 15px 0;
+  border: 1px solid #63301e;
+  border-radius: 16px;
+  background: #210b09;
 }
 
-.feature-icon {
-    width: 58px;
-    height: 58px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #301900;
-    color: #ffb000;
-    border: 1px solid #63400b;
-    border-radius: 14px;
-    font-size: 25px;
-    flex-shrink: 0;
-}
-
-.feature h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
+.icon {
+  font-size: 30px;
+  color: orange;
 }
 
 .feature p {
-    color: #aaa;
-    font-size: 14px;
-    line-height: 1.5;
+  margin: 6px 0 0;
+  color: #ccc;
 }
 
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    .container {
-        padding: 20px 15px;
-    }
-
-    .profile {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 35px;
-    }
-
-    .feature {
-        padding: 16px 12px;
-    }
+#timer {
+  font-size: 16px;
+  margin: 20px 0;
 }
 </style>
 </head>
@@ -162,77 +100,84 @@ h1 {
 
 <div class="container">
 
-    <!-- Profile picture -->
-    <img
-        class="profile"
-        src="profile.jpg"
-        alt="Trading channel profile"
-    >
+  <!-- Replace profile.jpg with your photo filename -->
+  <img src="profile.jpg" class="profile"
+       alt="WAY2 LABH profile">
 
-    <!-- Channel title -->
-    <h1>Pankaj Bhardwaj</h1>
+  <h1>WAY2 LABH</h1>
 
-    <div class="markets">
-        NIFTY • BANKNIFTY • SENSEX
+  <div class="subtitle">
+    MARKET UPDATES • TRADING COMMUNITY
+  </div>
+
+  <p class="description">
+    Clear market updates and trading community discussions.
+  </p>
+
+  <a class="join-btn"
+     href="https://t.me/+TFOCW6VEBCk1OGJl">
+     ✈ Join Telegram Channel
+  </a>
+
+  <div class="feature">
+    <div class="icon">↗</div>
+    <div>
+      <strong>Daily Market Updates</strong>
+      <p>Market commentary and updates.</p>
     </div>
+  </div>
 
-    <p class="description">
-        Clear market calls. Timely updates.
-        One focused trading community.
-    </p>
-
-    <!-- First Telegram button -->
-    <a
-        class="join-btn"
-        href="https://t.me/YOUR_CHANNEL"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        <span class="telegram-icon">➤</span>
-        Join Telegram channel
-    </a>
-
-    <!-- Features -->
-    <div class="features">
-
-        <div class="feature">
-            <div class="feature-icon">↗</div>
-            <div>
-                <h3>Daily Market Calls</h3>
-                <p>Actionable updates, shared consistently</p>
-            </div>
-        </div>
-
-        <div class="feature">
-            <div class="feature-icon">◎</div>
-            <div>
-                <h3>Market Analysis</h3>
-                <p>Research-based levels with a clear view</p>
-            </div>
-        </div>
-
-        <div class="feature">
-            <div class="feature-icon">♙</div>
-            <div>
-                <h3>Trading Experience</h3>
-                <p>Perspective built through market cycles</p>
-            </div>
-        </div>
-
+  <div class="feature">
+    <div class="icon">◎</div>
+    <div>
+      <strong>Trading Discussions</strong>
+      <p>Research and market conversations.</p>
     </div>
+  </div>
 
-    <!-- Second Telegram button -->
-    <a
-        class="join-btn"
-        href="https://t.me/YOUR_CHANNEL"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        <span class="telegram-icon">➤</span>
-        Join Telegram channel
-    </a>
+  <div class="feature">
+    <div class="icon">✦</div>
+    <div>
+      <strong>Learn & Stay Informed</strong>
+      <p>Make your own trading decisions.</p>
+    </div>
+  </div>
+
+  <a class="join-btn"
+     href="https://t.me/+TFOCW6VEBCk1OGJl">
+     ✈ Join Telegram Channel
+  </a>
+
+  <p id="timer">
+    Opening Telegram in 20 seconds...
+  </p>
+
+  <small>
+    Trading involves risk. No profits or accuracy are guaranteed.
+  </small>
 
 </div>
+
+<script>
+const telegramURL =
+  "https://t.me/+TFOCW6VEBCk1OGJl";
+
+let seconds = 20;
+
+const timer = document.getElementById("timer");
+
+const countdown = setInterval(function () {
+  seconds--;
+
+  timer.textContent =
+    "Opening Telegram in " + seconds + " seconds...";
+
+  if (seconds <= 0) {
+    clearInterval(countdown);
+    window.location.href = telegramURL;
+  }
+}, 1000);
+</script>
 
 </body>
 </html>
