@@ -1,202 +1,141 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1222494300081804');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1222494300081804&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 <meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pankaj Bhardwaj | Telegram</title>
+<title>Pankaj Bhardwaj Official</title>
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #4b0c02;
-    color: white;
-    text-align: center;
-    padding: 18px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #071b24, #101329, #162b1e);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
 }
 
 .container {
-    max-width: 680px;
-    margin: auto;
-    min-height: 95vh;
-    border: 4px solid white;
-    border-radius: 30px;
-    padding: 20px;
-    background: #3d0804;
+  width: 100%;
+  max-width: 390px;
+  padding: 25px 20px;
+  text-align: center;
+  border: 1px solid #344d43;
+  border-radius: 18px;
+  background: rgba(8, 20, 29, 0.94);
+  box-shadow: 0 0 25px #0008;
 }
 
-.profile {
-    width: 245px;
-    height: 245px;
-    border-radius: 50%;
-    border: 5px solid white;
-    object-fit: cover;
-    margin: 0 auto 40px;
-    display: block;
+.market-icon {
+  font-size: 42px;
+  margin-bottom: 12px;
 }
 
-h1 {
-    font-size: clamp(28px, 7vw, 52px);
-    margin-bottom: 25px;
+.channel-name {
+  color: #ffdf00;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 12px;
 }
 
-.market {
-    font-size: 21px;
-    font-weight: bold;
-    margin-bottom: 22px;
+.subtitle {
+  font-size: 14px;
+  color: #c6d4d0;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.description {
-    font-size: 19px;
-    line-height: 1.6;
-    margin-bottom: 35px;
+.market-box {
+  background: #102b25;
+  border: 1px solid #285443;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 22px;
 }
 
-.join-btn {
-    display: block;
-    width: 90%;
-    margin: 25px auto;
-    padding: 19px 10px;
-    background: #eeff00;
-    color: black;
-    text-decoration: none;
-    font-size: clamp(22px, 5vw, 36px);
-    font-weight: bold;
-    border-radius: 18px;
-    box-shadow: 0 0 22px #b9c600;
-    border: 2px solid #ffff66;
-    transition: 0.2s;
+.market-box p {
+  font-size: 13px;
+  line-height: 2;
+  color: #dcebe4;
 }
 
-.join-btn:hover {
-    transform: scale(1.02);
-    background: #ffff33;
+.join-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px 10px;
+  background: #ffdf00;
+  color: #172015;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 5px 18px #ffdf0040;
+  animation: zoom 1.5s infinite ease-in-out;
 }
 
-.telegram-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
-    color: white;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    font-size: 20px;
-    margin-right: 5px;
+.telegram-logo {
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
 }
 
-.features {
-    margin-top: 55px;
-    margin-bottom: 50px;
-}
-
-.feature {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    background: #210b09;
-    border: 1px solid #57301e;
-    border-radius: 18px;
-    padding: 20px;
-    margin-bottom: 15px;
-    gap: 18px;
-}
-
-.feature-icon {
-    min-width: 60px;
-    height: 60px;
-    border-radius: 14px;
-    background: #2d1a08;
-    border: 1px solid #79501b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffb900;
-    font-size: 26px;
-}
-
-.feature h3 {
-    font-size: 19px;
-    margin-bottom: 6px;
-}
-
-.feature p {
-    font-size: 15px;
-    color: #b9b9b9;
-    line-height: 1.4;
-}
-
-.check {
-    margin-left: auto;
-    color: #ffb900;
-    border: 1px solid #70401b;
-    border-radius: 50%;
-    padding: 7px;
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .timer {
-    color: #ffff00;
-    font-weight: bold;
-    font-size: 17px;
-    margin-top: 20px;
+  margin-top: 22px;
+  font-size: 13px;
+  color: #c9d8d2;
+}
+
+#countdown {
+  color: #ffdf00;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 8px 0;
 }
 
 .cancel {
-    display: none;
-    margin: 12px auto;
-    padding: 10px 18px;
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    cursor: pointer;
+  margin-top: 12px;
+  padding: 8px 13px;
+  background: transparent;
+  border: 1px solid #71877b;
+  border-radius: 8px;
+  color: #c9d8d2;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.disclaimer {
+  margin-top: 20px;
+  color: #879b91;
+  font-size: 11px;
+  line-height: 1.6;
 }
 
 .footer {
-    margin-top: 35px;
-    font-size: 13px;
-    color: #b9a7a3;
-}
-
-@media (max-width: 400px) {
-    .container {
-        padding: 15px;
-    }
-
-    .profile {
-        width: 200px;
-        height: 200px;
-    }
-
-    .feature {
-        padding: 14px;
-        gap: 12px;
-    }
+  margin-top: 15px;
+  color: #ffdf00;
+  font-size: 11px;
 }
 </style>
 </head>
@@ -205,130 +144,107 @@ h1 {
 
 <div class="container">
 
-    <!-- Profile photo: put profile.jpg beside this HTML file -->
-    <img src="profile.jpg"
-         class="profile"
-         alt="Trading profile">
+  <div class="market-icon">📈</div>
 
-    <h1>Pankaj Bhardwaj</h1>
+  <h1 class="channel-name">
+    𝗣𝗔𝗡𝗞𝗔𝗝 𝗕𝗛𝗔𝗥𝗗𝗪𝗔𝗝 𝗢𝗙𝗙𝗜𝗖𝗜𝗔𝗟
+  </h1>
 
-    <div class="market">
-        NIFTY • BANKNIFTY • SENSEX
-    </div>
+  <p class="subtitle">
+    Share Market & Trading Updates
+    <br>
+    Join our Telegram community!
+  </p>
 
-    <p class="description">
-        Clear market calls. Timely updates.
-        One focused trading community
-    </p>
+  <div class="market-box">
+    <p>📊 Stock Market Discussions</p>
+    <p>📈 Share Market Updates</p>
+    <p>📚 Trading Education</p>
+    <p>💬 Market Community</p>
+  </div>
 
-    <a class="join-btn"
-       href="https://t.me/+TFOCW6VEBCk1OGJl">
-        <span class="telegram-icon">➤</span>
-        Join Telegram channel
-    </a>
+  <a
+    class="join-button"
+    href="https://t.me/+VzW7Xq8nmJwxMjg1"
+    id="joinButton"
+  >
+    <svg class="telegram-logo"
+      viewBox="0 0 24 24"
+      fill="#229ED9"
+      aria-label="Telegram logo">
+      <circle cx="12" cy="12" r="12" fill="#229ED9"/>
+      <path d="M18.8 6.8 16.2 19c-.2.9-.7 1.1-1.4.7l-3.9-2.9-1.9 1.8c-.2.2-.4.4-.8.4l.3-4 7.2-6.5c.3-.3-.1-.4-.5-.2L6.3 14 2.5 12.8c-.8-.3-.8-.8.2-1.2L17.5 6c.7-.3 1.5.2 1.3.8z"
+        fill="white"/>
+    </svg>
 
-    <div class="features">
+    𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗙𝗿𝗲𝗲 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺
+  </a>
 
-        <div class="feature">
-            <div class="feature-icon">↗</div>
-            <div>
-                <h3>Daily Market Calls</h3>
-                <p>Actionable updates, shared consistently</p>
-            </div>
-            <span class="check">✓</span>
-        </div>
+  <div class="timer">
+    <p>⌛ Automatic Telegram redirect in</p>
+    <div id="countdown">20 seconds</div>
+    <p id="status">Or tap the yellow button to join now.</p>
 
-        <div class="feature">
-            <div class="feature-icon">◎</div>
-            <div>
-                <h3>95% Accuracy Confirm</h3>
-                <p>Research-led levels with a clear view</p>
-            </div>
-            <span class="check">★</span>
-        </div>
-
-        <div class="feature">
-            <div class="feature-icon">♙</div>
-            <div>
-                <h3>10+ Years Experience</h3>
-                <p>Perspective built through market cycles</p>
-            </div>
-            <span class="check">✓</span>
-        </div>
-
-    </div>
-
-    <a class="join-btn"
-       href="https://t.me/+TFOCW6VEBCk1OGJl">
-        <span class="telegram-icon">➤</span>
-        Join Telegram channel
-    </a>
-
-    <div class="timer" id="timer">
-        Redirecting to Telegram in 20 seconds...
-    </div>
-
-    <button class="cancel" id="cancelBtn"
-            onclick="cancelRedirect()">
-        Cancel automatic redirect
+    <button class="cancel" id="cancelButton"
+      onclick="cancelRedirect()">
+      Cancel automatic redirect
     </button>
+  </div>
 
-    <div class="footer">
-        Trading involves risk. Verify information
-        independently before making financial decisions.
-    </div>
+  <p class="disclaimer">
+    Disclaimer: For educational and informational purposes only.
+    Trading and investing involve financial risk.
+    This channel does not guarantee profits.
+  </p>
+
+  <div class="footer">
+    © 2026 Pankaj Bhardwaj Official
+  </div>
 
 </div>
 
 <script>
-const telegramURL =
-    "https://t.me/+TFOCW6VEBCk1OGJl";
+  const telegramLink =
+    "https://t.me/+VzW7Xq8nmJwxMjg1";
 
-let seconds = 8;
-let redirectCancelled = false;
+  let seconds = 20;
+  let timer;
 
-const timerElement =
-    document.getElementById("timer");
+  const countdown =
+    document.getElementById("countdown");
 
-const cancelButton =
-    document.getElementById("cancelBtn");
+  const status =
+    document.getElementById("status");
 
-// Show cancellation option
-cancelButton.style.display = "inline-block";
+  const cancelButton =
+    document.getElementById("cancelButton");
 
-const countdown = setInterval(function () {
+  function startTimer() {
+    timer = setInterval(function () {
+      seconds--;
 
-    if (redirectCancelled) {
-        clearInterval(countdown);
-        return;
-    }
+      countdown.textContent =
+        seconds + " seconds";
 
-    seconds--;
+      if (seconds <= 0) {
+        clearInterval(timer);
+        countdown.textContent = "Opening Telegram...";
+        window.location.href = telegramLink;
+      }
+    }, 1000);
+  }
 
-    if (seconds > 0) {
-        timerElement.textContent =
-            "Redirecting to Telegram in "
-            + seconds + " seconds...";
-    } else {
-        clearInterval(countdown);
+  function cancelRedirect() {
+    clearInterval(timer);
 
-        timerElement.textContent =
-            "Opening Telegram...";
-
-        window.location.href = telegramURL;
-    }
-
-}, 1000);
-
-function cancelRedirect() {
-    redirectCancelled = true;
-    clearInterval(countdown);
-
-    timerElement.textContent =
-        "Automatic redirect cancelled.";
+    countdown.textContent = "Cancelled";
+    status.textContent =
+      "Automatic redirect cancelled. Tap the yellow button to join.";
 
     cancelButton.style.display = "none";
-}
+  }
+
+  startTimer();
 </script>
 
 </body>
