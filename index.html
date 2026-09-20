@@ -1,97 +1,186 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WAY2 LABH - Telegram</title>
+<title>Pankaj Bhardwaj - Telegram</title>
 
 <style>
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 15px;
-  background: #4a0d04;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    background: #641b08;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 .container {
-  max-width: 680px;
-  min-height: 95vh;
-  margin: auto;
-  padding: 25px 18px;
-  border: 4px solid white;
-  border-radius: 30px;
-  background: #300700;
+    max-width: 750px;
+    min-height: 95vh;
+    margin: auto;
+    padding: 25px 22px;
+    background: #390804;
+    border: 5px solid #eee;
+    border-radius: 40px;
 }
 
 .profile {
-  width: 230px;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid white;
-  margin: 10px auto 25px;
+    width: 270px;
+    height: 270px;
+    max-width: 75%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0 auto 45px;
 }
 
 h1 {
-  font-size: 45px;
-  margin: 15px 0;
+    font-size: clamp(32px, 7vw, 58px);
+    margin-bottom: 30px;
 }
 
 .subtitle {
-  font-size: 20px;
-  font-weight: bold;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
 }
 
 .description {
-  font-size: 18px;
-  line-height: 1.5;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 40px;
 }
 
 .join-btn {
-  display: block;
-  max-width: 500px;
-  margin: 30px auto;
-  padding: 20px 12px;
-  background: #efff00;
-  color: black;
-  font-size: 27px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 18px;
-  box-shadow: 0 0 20px #dfff00;
+    display: block;
+    width: 90%;
+    margin: 25px auto;
+    padding: 20px 10px;
+    background: #eaff00;
+    color: #050505;
+    font-size: clamp(20px, 5vw, 36px);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #d9ff00;
+    transition: 0.2s;
+}
+
+.join-btn:hover {
+    transform: scale(1.02);
+    background: #f5ff50;
+}
+
+.telegram-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #080808;
+    color: #eaff00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 23px;
+    margin-right: 8px;
+}
+
+.features {
+    margin: 40px 0;
+    padding: 15px;
+    background: #280805;
 }
 
 .feature {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  gap: 15px;
-  padding: 18px;
-  margin: 15px 0;
-  border: 1px solid #63301e;
-  border-radius: 16px;
-  background: #210b09;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    background: #200b0b;
+    border: 1px solid #57301d;
+    border-radius: 20px;
+    padding: 22px;
+    margin-bottom: 18px;
 }
 
-.icon {
-  font-size: 30px;
-  color: orange;
+.feature-icon {
+    min-width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #301900;
+    border: 1px solid #6a4100;
+    border-radius: 15px;
+    color: #ffb000;
+    font-size: 26px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin-bottom: 7px;
 }
 
 .feature p {
-  margin: 6px 0 0;
-  color: #ccc;
+    font-size: 16px;
+    color: #aaa;
+    line-height: 1.4;
 }
 
-#timer {
-  font-size: 16px;
-  margin: 20px 0;
+.timer {
+    font-size: 18px;
+    margin: 20px auto;
+    color: #eaff00;
+}
+
+.cancel-btn {
+    background: transparent;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer {
+    color: #aaa;
+    font-size: 13px;
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+@media(max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .container {
+        padding: 20px 12px;
+        border-radius: 30px;
+    }
+
+    .profile {
+        width: 230px;
+        height: 230px;
+        margin-bottom: 35px;
+    }
+
+    .feature {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .feature-icon {
+        min-width: 50px;
+        height: 50px;
+    }
 }
 </style>
 </head>
@@ -100,83 +189,129 @@ h1 {
 
 <div class="container">
 
-  <!-- Replace profile.jpg with your photo filename -->
-  <img src="profile.jpg" class="profile"
-       alt="WAY2 LABH profile">
+    <!-- Profile photo -->
+    <img
+        src="profile.jpg"
+        alt="Profile photo"
+        class="profile"
+    >
 
-  <h1>WAY2 LABH</h1>
+    <h1>Pankaj Bhardwaj</h1>
 
-  <div class="subtitle">
-    MARKET UPDATES • TRADING COMMUNITY
-  </div>
-
-  <p class="description">
-    Clear market updates and trading community discussions.
-  </p>
-
-  <a class="join-btn"
-     href="https://t.me/+TFOCW6VEBCk1OGJl">
-     ✈ Join Telegram Channel
-  </a>
-
-  <div class="feature">
-    <div class="icon">↗</div>
-    <div>
-      <strong>Daily Market Updates</strong>
-      <p>Market commentary and updates.</p>
+    <div class="subtitle">
+        NIFTY • BANKNIFTY • SENSEX
     </div>
-  </div>
 
-  <div class="feature">
-    <div class="icon">◎</div>
-    <div>
-      <strong>Trading Discussions</strong>
-      <p>Research and market conversations.</p>
+    <p class="description">
+        <b>Clear market calls.</b>
+        Timely updates. One focused trading community
+    </p>
+
+    <!-- First Telegram button -->
+    <a class="join-btn"
+       href="https://t.me/+TFOCW6VEBCk1OGJl">
+       <span class="telegram-icon">➤</span>
+       Join Telegram channel
+    </a>
+
+    <!-- Features -->
+    <div class="features">
+
+        <div class="feature">
+            <div class="feature-icon">↗</div>
+            <div>
+                <h3>Daily Market Calls</h3>
+                <p>Actionable updates, shared consistently</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">◎</div>
+            <div>
+                <h3>95% Accuracy Confirm</h3>
+                <p>Research-led levels with a clear view</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">♙</div>
+            <div>
+                <h3>10+ Years Experience</h3>
+                <p>Perspective built through market cycles</p>
+            </div>
+        </div>
+
     </div>
-  </div>
 
-  <div class="feature">
-    <div class="icon">✦</div>
-    <div>
-      <strong>Learn & Stay Informed</strong>
-      <p>Make your own trading decisions.</p>
+    <!-- Second Telegram button -->
+    <a class="join-btn"
+       href="https://t.me/+TFOCW6VEBCk1OGJl">
+       <span class="telegram-icon">➤</span>
+       Join Telegram channel
+    </a>
+
+    <!-- Countdown -->
+    <div class="timer" id="timer">
+        Telegram will open in 20 seconds
     </div>
-  </div>
 
-  <a class="join-btn"
-     href="https://t.me/+TFOCW6VEBCk1OGJl">
-     ✈ Join Telegram Channel
-  </a>
+    <button class="cancel-btn"
+            id="cancelBtn"
+            onclick="cancelRedirect()">
+        Cancel automatic redirect
+    </button>
 
-  <p id="timer">
-    Opening Telegram in 20 seconds...
-  </p>
-
-  <small>
-    Trading involves risk. No profits or accuracy are guaranteed.
-  </small>
+    <div class="footer">
+        Trading involves risk. Please do your own research.
+    </div>
 
 </div>
 
 <script>
-const telegramURL =
-  "https://t.me/+TFOCW6VEBCk1OGJl";
+const telegramLink =
+    "https://t.me/+TFOCW6VEBCk1OGJl";
 
 let seconds = 20;
+let cancelled = false;
 
-const timer = document.getElementById("timer");
+const timerElement =
+    document.getElementById("timer");
 
-const countdown = setInterval(function () {
-  seconds--;
+const cancelButton =
+    document.getElementById("cancelBtn");
 
-  timer.textContent =
-    "Opening Telegram in " + seconds + " seconds...";
+const countdown = setInterval(function() {
 
-  if (seconds <= 0) {
-    clearInterval(countdown);
-    window.location.href = telegramURL;
-  }
+    if (cancelled) {
+        clearInterval(countdown);
+        return;
+    }
+
+    seconds--;
+
+    if (seconds > 0) {
+        timerElement.textContent =
+            "Telegram will open in " + seconds + " seconds";
+    } else {
+        clearInterval(countdown);
+
+        timerElement.textContent =
+            "Opening Telegram...";
+
+        window.location.href = telegramLink;
+    }
+
 }, 1000);
+
+function cancelRedirect() {
+    cancelled = true;
+    clearInterval(countdown);
+
+    timerElement.textContent =
+        "Automatic redirect cancelled.";
+
+    cancelButton.style.display = "none";
+}
 </script>
 
 </body>
